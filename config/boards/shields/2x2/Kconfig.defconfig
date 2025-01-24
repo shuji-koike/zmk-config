@@ -1,0 +1,6 @@
+if SHIELD_2x2
+
+config ZMK_KEYBOARD_NAME
+    default "2x2"
+
+endif
