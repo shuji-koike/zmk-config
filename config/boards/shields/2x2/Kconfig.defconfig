@@ -1,6 +1,11 @@
-if SHIELD_2x2
-
+if SHIELD_2x2_LEFT
 config ZMK_KEYBOARD_NAME
-    default "2x2"
+    default "2x2x2_split"
+config ZMK_SPLIT_ROLE_CENTRAL
+   default y
+endif
 
+if SHIELD_2x2_LEFT || SHIELD_2x2_RIGHT
+config ZMK_SPLIT
+    default y
 endif

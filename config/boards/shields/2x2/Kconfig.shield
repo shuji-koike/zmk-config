@@ -1,2 +1,5 @@
-config SHIELD_2x2
-    def_bool $(shields_list_contains,2x2)
+config SHIELD_2x2_LEFT
+    def_bool $(shields_list_contains,2x2_left)
+
+config SHIELD_2x2_RIGHT
+    def_bool $(shields_list_contains,2x2_right)
